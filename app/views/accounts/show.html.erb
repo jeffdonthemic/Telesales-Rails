@@ -1,0 +1,49 @@
+<span class="nav"><a href="/accounts/index">Search</a></span><p/>
+<span class="title">Account Display</span>
+<p/>
+
+<table border="0" cellspacing="1" cellpadding="5" bgcolor="#CCCCCC">
+	<tr bgcolor="#407BA8">
+		<td style="color: #ffffff; font-weight: bold;">Name</td>
+		<td bgcolor="#ffffff"><%= @account["Name"] %></td>
+	</tr>
+	<tr bgcolor="#407BA8">
+		<td style="color: #ffffff; font-weight: bold;">City</td>
+		<td bgcolor="#ffffff"><%= @account["BillingCity"] %></td>
+	</tr>
+	<tr bgcolor="#407BA8">
+		<td style="color: #ffffff; font-weight: bold;">State</td>
+		<td bgcolor="#ffffff"><%= @account["BillingState"] %></td>
+	</tr>
+	<tr bgcolor="#407BA8">
+		<td style="color: #ffffff; font-weight: bold;">Phone</td>
+		<td bgcolor="#ffffff"><%= @account["Phone"] %></td>
+	</tr>
+	<tr bgcolor="#407BA8">
+		<td style="color: #ffffff; font-weight: bold;">Website</td>
+		<td bgcolor="#ffffff"><%= @account["Website"] %></td>
+	</tr>	
+</table>
+            
+<br><a href="/accounts/<%= params[:id] %>/new_opp">Create a new Opportunity</a> or <a href="/accounts/<%= params[:id] %>/edit">edit this Account</a><p/>	
+
+<p/><span class="heading">Opportunities for <%= @account["Name"] %></span><br><p/>
+
+<table border="0" cellspacing="1" cellpadding="5" bgcolor="#CCCCCC">
+<tr bgcolor="#407BA8">
+	<td style="color: #ffffff; font-weight: bold;">Name</td>
+	<td style="color: #ffffff; font-weight: bold;">Amount</td>
+	<td style="color: #ffffff; font-weight: bold;">Stage</td>
+	<td style="color: #ffffff; font-weight: bold;">Probability</td>
+	<td style="color: #ffffff; font-weight: bold;">Close Date</td>
+</tr>
+<% @opportunities["records"].each do |opp| %>
+	<tr style="background:#ffffff" onMouseOver="this.style.background='#eeeeee';" onMouseOut="this.style.background='#ffffff';">
+		<td nowrap><%= opp["Name"] %></td>
+		<td>$<%= opp["Amount"] %></td>
+		<td><%= opp["StageName"] %></td>
+		<td><%= opp["Probability"] %>%</td>
+		<td><%= opp["CloseDate"] %></td>
+	</tr>
+<% end %>
+</table>

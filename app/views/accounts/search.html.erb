@@ -1,0 +1,33 @@
+<span class="title">Welcome to the ACME Telesales Application (RoR on Heroku)</span><p/>
+<p>This demo shows you how to query, retrieve, create and edit records in salesforce.com.</p>
+<p>Search for an Account to view all of its Opportunities or to create a new one.</p>
+<p/>
+<form method="post" action="search">
+	<span class="heading">Search by Account Name:</span>
+	<p/>
+	<input type="text" name="accountName" value="<%= params[:accountName] %>" style="width: 300px"/>
+	&nbsp
+	<input type="submit" value="Search"/>
+	&nbsp 
+</form>
+<p/>
+
+<span class="heading"><%= @json["records"].length %> accounts matching your search criteria:</span>
+	
+<p/>
+<table border="0" cellspacing="1" cellpadding="5" bgcolor="#CCCCCC" width="50%">
+<tr bgcolor="#407BA8">
+	<td style="color: #ffffff; font-weight: bold;">Name</td>
+	<td style="color: #ffffff; font-weight: bold;">City</td>
+	<td style="color: #ffffff; font-weight: bold;">State</td>
+	<td style="color: #ffffff; font-weight: bold;">Phone</td>
+</tr>
+<% @json["records"].each do |record| %>
+	<tr style="background:#ffffff" onMouseOver="this.style.background='#eeeeee';" onMouseOut="this.style.background='#ffffff';">
+		<td><a href="/accounts/<%= record["Id"]%>"><%= record["Name"] %></a></td>
+		<td><%= record["BillingCity"] %></td>
+		<td><%= record["BillingState"] %></td>
+		<td><%= record["Phone"] %></td>
+	</tr>
+<% end %>
+</table>
