@@ -12,7 +12,7 @@ module OmniAuth
   end
 end
 
-
+# created a new remote access for heroku
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :forcedotcom, '3MVG9VmVOCGHKYBSMFoH607T0CnBOhjc53A0HyP3Ow9gYjwWVFvv4VOeueERzhsl3mQKziprCe.Fc14mA2iwp', '5246129761561248443'
+  provider :forcedotcom, '[add consumer key]', '[add consumer secret]'
 end
