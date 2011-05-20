@@ -31,7 +31,8 @@ class AccountsController < ApplicationController
   end
   
   def save_opp
-    Accounts.create_opp(params)
+    # Accounts.create_opp(params)
+    puts params[:id]
     redirect_to :action => :show, :id => params[:id]
   end
 
