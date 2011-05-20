@@ -77,7 +77,7 @@ class Accounts
     }
     response = post(Accounts.root_url+"/sobjects/Opportunity/", options)
     # 201 response.body equals success
-    puts response.body, response.code, response.message
+    # puts response.body, response.code, response.message
   end
  
 end
