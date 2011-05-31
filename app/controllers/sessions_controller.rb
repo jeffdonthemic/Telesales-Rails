@@ -1,4 +1,4 @@
-require 'Accounts'
+require 'accounts'
 
 class SessionsController < ApplicationController
   def create

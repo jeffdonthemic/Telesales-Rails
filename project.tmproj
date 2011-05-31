@@ -3,14 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>documents</key>
-	<array/>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>telesales-rails</string>
+			<key>regexFolderFilter</key>
+			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
+			<key>selected</key>
+			<true/>
+			<key>sourceDirectory</key>
+			<string></string>
+		</dict>
+	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>200</integer>
+	<integer>209</integer>
 	<key>metaData</key>
 	<dict/>
 	<key>showFileHierarchyDrawer</key>
-	<false/>
+	<true/>
 	<key>windowFrame</key>
-	<string>{{275, 103}, {348, 394}}</string>
+	<string>{{307, 49}, {1111, 719}}</string>
 </dict>
 </plist>
