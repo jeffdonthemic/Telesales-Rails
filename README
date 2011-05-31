@@ -1,12 +1,12 @@
 Rails Telesales App
 
-This is a demo Rails app running on Ruby 1.9.2 and Rails 3.0.5. It uses OAuth2 via OmniAuth (https://github.com/intridea/omniauth) to authorize access to a salesforce.com org. It uses the REST API (http://wiki.developerforce.com/index.php/Getting_Started_with_the_Force.com_REST_API) to query for records, retreive records to display, create new records and update existing one. 
+This is a demo Rails app running on Ruby 1.9.2 and Rails 3.0.5. It uses OAuth2 via OmniAuth (https://github.com/intridea/omniauth) to authorize access to a salesforce.com org. It uses the REST API (http://wiki.developerforce.com/index.php/Getting_Started_with_the_Force.com_REST_API) to query for records, retreive records to display, create new records and update existing ones. 
 
 I forked Quinton Wall's omniauth-rails3-forcedotcom project (https://github.com/quintonwall/omniauth-rails3-forcedotcom/wiki/Build-Mobile-Apps-in-the-Cloud-with-Omniauth,-Httparty-and-Force.com) to get started.
 
-There is both a Python version and Java version of this app. Both run on Google App Engine.
+There is both a Python and Java version of this app. Both run on Google App Engine.
 
-See http://blog.jeffdouglas.com/2011/05/04/telesales-rails-heroku for more detailed info.
+See http://blog.jeffdouglas.com/2011/05/31/telesales-rails-heroku for more detailed info.
 
 Jeff Douglas
 Appirio

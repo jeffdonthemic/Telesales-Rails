@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>test/functional/accounts_controller_test.rb</string>
+	<string>app/controllers/accounts_controller.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -40,58 +40,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>18</integer>
+				<integer>12</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>33</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
-		</dict>
-		<key>app/controllers/application_controller.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>22</integer>
-				<key>line</key>
-				<integer>1</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>app/controllers/sessions_controller.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>18</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
 		</dict>
 		<key>config/environment.rb</key>
 		<dict>
@@ -107,7 +63,7 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>config/initializers/backtrace_silencers.rb</key>
+		<key>config/environments/development.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
@@ -121,7 +77,7 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>config/initializers/inflections.rb</key>
+		<key>config/environments/production.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
@@ -135,7 +91,7 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>config/initializers/mime_types.rb</key>
+		<key>config/environments/test.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
@@ -154,56 +110,28 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>134</integer>
+				<integer>26</integer>
 				<key>line</key>
-				<integer>16</integer>
+				<integer>17</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>config/initializers/secret_token.rb</key>
+		<key>lib/accounts.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>177</integer>
-				<key>line</key>
 				<integer>6</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>config/initializers/session_store.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>49</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>test/functional/accounts_controller_test.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>35</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
@@ -211,19 +139,15 @@
 		<string>README</string>
 		<string>config/initializers/omniauth.rb</string>
 		<string>config/environment.rb</string>
+		<string>config/environments/development.rb</string>
+		<string>config/environments/production.rb</string>
+		<string>config/environments/test.rb</string>
 		<string>app/controllers/accounts_controller.rb</string>
-		<string>test/functional/accounts_controller_test.rb</string>
-		<string>app/controllers/application_controller.rb</string>
-		<string>app/controllers/sessions_controller.rb</string>
-		<string>config/initializers/secret_token.rb</string>
-		<string>config/initializers/session_store.rb</string>
-		<string>config/initializers/backtrace_silencers.rb</string>
-		<string>config/initializers/inflections.rb</string>
-		<string>config/initializers/mime_types.rb</string>
+		<string>lib/accounts.rb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{310, 104}, {1111, 719}}</string>
+	<string>{{313, 81}, {1111, 719}}</string>
 </dict>
 </plist>
