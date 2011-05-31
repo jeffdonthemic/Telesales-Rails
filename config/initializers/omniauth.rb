@@ -16,5 +16,5 @@ end
 # created a new remote access for heroku
 Rails.application.config.middleware.use OmniAuth::Builder do
   # Telesales App - Heroku
-  provider :forcedotcom, '[add consumer key]', '[add consumer secret]'
+  provider :forcedotcom, '3MVG9VmVOCGHKYBSMFoH607T0CtHEK8.Hytco3Z.oY45u4n8Pkk81aJMqBvPih1aPnnUMU82mXpHL_mYriYAh', '4084422413897598678'
 end
